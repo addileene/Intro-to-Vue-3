@@ -70,7 +70,7 @@ app.component('product-display', {
           this.selectedVariant = index
       },
       deleteToCart() {
-        this.$emit('remove-to-cart',this.variants[this.selectedVariant].id)
+        this.$emit('remove-to-cart', this.selectedVariant)
       }
   },
   computed: {
